@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/layout.css" />
+    <title>Some random page</title>
+
+    <script src="type/shapes/GeomObject.js"></script>
+    <script src="type/shapes/Square.js"></script>
+    <script src="type/shapes/Circle.js"></script>
+    <script src="type/GraphObject.js"></script>
+    <script src="type/GraphEngine.js"></script>
+    <script src="type/PageRender.js"></script>
+    <script src="lib/jscolor.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event)
+        {
+            var page = new PageRender();
+            page.run();
+
+        });
+    </script>
+</head>
+<body>
+    <div id="menuObjects" class="menu">
+        <ul>
+            <li>
+                Actions
+            </li>
+            <li>
+                <canvas class="menu_item_not_selected" id="c_square" width="50" height="50">Square</canvas>
+            </li>
+            <li>
+                <canvas class="menu_item_not_selected" id="c_rect" width="50" height="50">Rectangle</canvas>
+            </li>
+            <li>
+                <canvas class="menu_item_not_selected" id="c_circle" width="50" height="50">Circle</canvas>
+            </li>
+            <li>
+                <img class="menu_item_not_selected" src="img/circle_image.png" id="img_remove" width="50" height="50"/>
+            </li>
+            <li>
+                <img class="menu_item_not_selected" id="img_move" src="img/move_image.png" width="50" height="50" />
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="content">
+        <header id="header">
+            <ul class="inline">
+                <li>
+                    <button id="ClearAll"> Clear playground </button>
+                </li>
+                <li>
+                    Background: <input  class="color" id="backgroundColor" value="ffffff" />
+                </li>
+                <li>
+                    Fill: <input class="color" id="fillColor" value="FF0000" />
+                </li>
+                <li>
+                    Stripe: <input class="color" id="stripeColor" value="000000" />
+                </li>
+            </ul>
+        </header>
+
+        <noscript>
+            <h3>Please Enable javascript in your browser</h3>
+        </noscript>
+        <canvas width="1000" height="700" id="playground">
+            <h3>Canvas is not supported in your browser.</h3>
+            <h4>Please download last version of Google Chrome or Firefox.</h4>
+        </canvas>
+
+
+    </div>
+</body>
+</html>

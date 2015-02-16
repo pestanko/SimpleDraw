@@ -1,0 +1,118 @@
+* {
+}
+
+
+body
+{
+    background-color: #999;
+    font-family: "Lucida Black", Verdana, Arial, sans-serif;
+}
+
+#content {
+    width: 1000px;
+    margin:auto;
+}
+
+
+#playground
+{
+    maring: 10px;
+    maring-top: 20px;
+    padding: 5px;
+    border: 2px solid dimgray;
+}
+
+ul.inline
+{
+    list-style: none;
+}
+
+
+#header
+{
+    width: auto;
+    height: 30px;
+}
+
+
+#header button
+{
+    padding: 3px;
+    margin: 2px;
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+
+
+ul.inline li
+{
+    display: inline-block;
+    float:left;
+    padding: 5px;
+}
+
+input
+{
+    border-radius: 10px;
+}
+
+.color
+{
+    width: 80px;
+    text-align: center;
+
+}
+
+#menuObjects
+{
+    width: 60px;
+    float:left;
+    margin-left: 100px;
+    padding: 0px;
+}
+
+#menuObjects ul
+{
+    float: left;
+    maring: 0px;
+    padding: 10px 5px;
+
+    list-style: none;
+    text-align: center;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background-color: #AAA;
+}
+#menuObjects li{
+    margin: 0px;
+    float: left;
+    display: inline-block;
+    padding: 0px;
+}
+#menuObjects canvas, img
+{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#menuObjects  canvas:hover
+{
+    background-color: chartreuse;
+}
+
+#menuObjects  img:hover
+{
+    background-color: chartreuse;
+}
+
+.menu .menu_item_selected
+{
+    background-color: cadetblue;
+}
+
+.menu .menu_item_not_selected
+{
+    background-color: transparent;
+}
